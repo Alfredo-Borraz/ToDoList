@@ -16,7 +16,7 @@ const task = {
 button.addEventListener("click", function (e) {
     e.preventDefault()
     console.log("task", task);
-    fetch('http://localhost:8080/api/tareas', {
+    fetch('http://localhost:3000/api/tareas', {
         method: "POST",
         body: JSON.stringify(task),
         headers: {
@@ -35,7 +35,7 @@ button.addEventListener("click", function (e) {
 });
 
 const fetchTareas = () => {
-    fetch("http://localhost:8080/api/tareas")
+    fetch("http://localhost:3000/api/tareas")
         .then(response => {
             /*         console.log(response); */
             if (!response.ok) {
