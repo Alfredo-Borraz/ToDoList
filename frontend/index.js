@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', ()=>{
-    let button = document.getElementById("send");
+let button = document.getElementById("send");
 let buttonDelate = document.getElementById("delate");
 let nombre = document.getElementById("name");
 let tarea = document.getElementById("task");
